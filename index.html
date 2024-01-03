@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    
+  
+</head>
+<body>
+    <header>
+        <div class="logo">DIMAS.</div>
+        <ul class="nav">
+            <li><a href="#banner" class="nav-items">Home</a></li>
+            <li><a href="#skills" class="nav-items">Skill</a></li>
+            <li><a href="#about" class="nav-items">About</a></li>
+            <li><a href="#contact" class="nav-items">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <section class="banner" id="banner">
+        <h4>Selamat Datang di Website</h4>
+        <h1>MUHAMAD DIMAS STIYAWAN</h1>
+        <p>
+            Ini Merupakan Web Belajar Membuat Profile dengan Menggunakan HTML dan CSS
+        </p>
+    </section>
+
+    <section class="keunggulan" id="keunggulan">
+        <div class="keunggulan-item">
+            <h4>Muda</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptate, cupiditate</p>
+        </div>
+        <div class="keunggulan-item">
+            <h4>Pintar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptate, cupiditate</p>
+        </div>
+        <div class="keunggulan-item">
+            <h4>Handsome</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptate, cupiditate</p>
+        </div>
+        <div class="keunggulan-item">
+            <h4>Tinggi</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptate, cupiditate</p>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <img src="foto/Picsart_23-05-21_12-13-37-332.jpg" alt="">
+        <div class="text-about">
+            <h2>Tentang Saya</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quia eos aspernatur veniam nemo dolores illo maxime aut aliquam laborum, distinctio sunt et minus quibusdam, quas, id minima harum libero.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorem ullam vitae aliquam amet blanditiis in autem iusto porro. Delectus autem tempora ducimus eaque et nisi? Voluptas quae autem asperiores.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skill Saya</h2>
+        <p class="deskripsi">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dolor praesentium magnam, facere aut consequatur et delectus dicta accusamus animi in voluptas eos molestias, beatae voluptatibus porro ratione quae eveniet?
+        </p>
+        <div class="skills-container">
+            <div class="skills-item">
+                <img src="foto/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skills-item">
+                <img src="foto/css1.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skills-item">
+                <img src="foto/javascript1.png" alt="Javascript">
+                <p>JS</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact" id="contact">
+        <h2>Kontak Saya</h2>
+        <p class="deskripsi">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quasi quo quidem nihil laboriosam culpa natus ducimus tenetur voluptatem? Id molestias perspiciatis voluptatibus! Doloribus voluptatem, laboriosam nulla omnis molestiae ad.
+        </p>
+        <form action="">
+            <div class="form-group">
+                <label for="">Nama</label>
+                <input type="text" class="form-contact" placeholder="Masukkan Nama..">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" class="form-contact" placeholder="Masukkan email..">
+            </div>
+            <div class="form-group">
+                <label for="">Pesan</label>
+                <textarea class="form-control" rows="5" placeholder="Pesan Anda.."></textarea>
+            </div>
+            <button class="btn-submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="top">
+            <h1>Muhamad Dimas Stiyawan</h1>
+            <p>Ini adalah web untuk kita belajar web</p>
+        </div>
+        <p>&copy; 2023 Copyright. All Right Reserved.</p>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+    const tombolToggle = document.querySelector(".menu-toggle")
+    tombolToggle.addEventListener("click", function(){
+        const nav = document.querySelector(".nav")
+        nav.classList.toggle("active")
+    })
+</script>
